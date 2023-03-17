@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "../components/Header";
+import Link from "next/link";
 
 const App = () => {
   return (
@@ -18,14 +19,13 @@ const App = () => {
             </h1>
             <p class="mb-8 leading-relaxed">
               Meggings kinfolk echo park stumptown DIY, kale chips beard
-              jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice
-              godard disrupt ramps hexagon mustache umami snackwave tilde
+              Loginodard disrupt ramps hexagon mustache umami snackwave tilde
               chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac
               mlkshk freegan photo booth af fingerstache pitchfork.
             </p>
             <div class="flex justify-center">
               <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">
-                Login
+                <Link href="/Login">Login</Link>
               </button>
               <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 SignUp
