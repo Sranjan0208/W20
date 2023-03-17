@@ -3,15 +3,19 @@ import firebase from "firebase/app";
 import { db } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
-const input = async () => {};
-
 const Form = () => {
+  const i = async () => {
+    const radioheadRef = await addDoc(collection(db, "forms"), {
+      value: radioheadValue,
+    });
+
+    return radioheadRef;
+  };
   const [radioheadValue, setradioheadValue] = useState();
-  const radioheadRef = addDoc(collection(db, "forms"), {
-    value: radioheadValue,
-  });
+
   const handleSubmit = (event) => {
-    radioheadRef
+    event.preventDefault();
+    i()
       .then(() => {
         console.log("Radiohead value saved!");
       })
