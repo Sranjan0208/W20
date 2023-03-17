@@ -35,6 +35,14 @@ const App = () => {
           </div>
         </div>
       </section>
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;github&#x2F;explore&#x2F;3768cea58745e43fb08fc9f1e325e65dc64adf26&#x2F;topics&#x2F;chatbot&#x2F;chatbot.png"
+      intent="WELCOME"
+      chat-title="W20_HelpBot"
+      agent-id="0348936a-710f-472f-a257-a95a3bcd7d5f"
+      language-code="en"
+    ></df-messenger>
     </>
   );
 };

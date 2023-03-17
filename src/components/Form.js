@@ -2,7 +2,7 @@ const Form = () => {
   return (
     <>
       <h3 class="mb-4 font-semibold text-gray-900 ">Identification</h3>
-      <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg ">
+      <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 mb-10 rounded-lg ">
         <li class="w-full border-b border-gray-200 rounded-t-lg ">
           <div class="flex items-center pl-3">
             <input
