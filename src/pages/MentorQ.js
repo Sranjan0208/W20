@@ -20,9 +20,9 @@ const MentorQ = () => {
               food truck ugh squid celiac humblebrag.
             </p>
           </div>
-          <div className="flex flex-wrap flex-col justify-center content-center">
-            <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 flex flex-col items-center">
-              <Form className="mb-8" />
+          <div class="flex flex-wrap flex-col justify-center content-center">
+            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 flex flex-col items-center">
+              <Form />
               <Form />
               <Form />
             </div>
