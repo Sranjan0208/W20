@@ -3,15 +3,19 @@ import firebase from "firebase/app";
 import { db } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
-const input = async () => {};
-
 const Form = () => {
-  const [radioheadValue, setradioheadValue] = useState(0);
-  const radioheadRef = addDoc(collection(db, "forms"), {
-    value: radioheadValue,
-  });
+  const i = async () => {
+    const radioheadRef = await addDoc(collection(db, "forms"), {
+      value: radioheadValue,
+    });
+
+    return radioheadRef;
+  };
+  const [radioheadValue, setradioheadValue] = useState();
+
   const handleSubmit = (event) => {
-    radioheadRef
+    event.preventDefault();
+    i()
       .then(() => {
         console.log("Radiohead value saved!");
       })
@@ -29,7 +33,7 @@ const Form = () => {
               <input
                 id="list-radio-license"
                 type="radio"
-                value={radioheadValue}
+                value={0}
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
                 onChange={(e) => setradioheadValue(e.target.value)}
@@ -47,7 +51,7 @@ const Form = () => {
               <input
                 id="list-radio-id"
                 type="radio"
-                value={radioheadValue + 1}
+                value={1}
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 "
                 onChange={(e) => setradioheadValue(e.target.value)}
@@ -65,7 +69,7 @@ const Form = () => {
               <input
                 id="list-radio-millitary"
                 type="radio"
-                value={radioheadValue + 2}
+                value={2}
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  "
                 onChange={(e) => setradioheadValue(e.target.value)}
@@ -83,7 +87,7 @@ const Form = () => {
               <input
                 id="list-radio-passport"
                 type="radio"
-                value={radioheadValue + 3}
+                value={3}
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 "
                 onChange={(e) => setradioheadValue(e.target.value)}
