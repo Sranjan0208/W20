@@ -1,6 +1,6 @@
 import Form from "../components/Form";
 
-const MentorQ = () => {
+const MenteeQ = () => {
   return (
     <div>
       <section class="text-gray-600 body-font">
@@ -20,7 +20,8 @@ const MentorQ = () => {
             </p>
           </div>
           <div class="flex flex-wrap flex-col justify-center content-center">
-            <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 flex flex-col items-center">
+            <div class="xl:w-2/4 lg:w-1/2 md:w-full px-8 py-6 flex flex-col items-center">
+              <Form />
               <Form />
               <Form />
               <Form />
@@ -32,4 +33,4 @@ const MentorQ = () => {
   );
 };
 
-export default MentorQ;
+export default MenteeQ;

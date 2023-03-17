@@ -97,8 +97,8 @@ const Form = () => {
             </div>
           </li>
         </ul>
+        <button type="submit">Save</button>
       </form>
-      <button type="submit">Save</button>
     </>
   );
 };

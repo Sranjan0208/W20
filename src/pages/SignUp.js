@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
             <h1 className="title-font font-medium text-3xl text-gray-900">
-              Log into a World Full of Opportunities
+            Come Join us and Make our Mission a Success and Let's Make India a Better Place
             </h1>
             <p className="leading-relaxed mt-4">
             We believe in unlocking the full potential of women as entrepreneurs and leaders, driving innovation and economic growth. We strive to create a more equitable world by providing women with access to technology and the skills needed to succeed in the digital age. Through our efforts, we aim to build a better future for all.
@@ -48,10 +48,10 @@ export default function Home() {
               />
             </div>
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
-              Log in
+              Sign Up
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably heard of them jean shorts.
+            "There is no limit to what we, as women, can accomplish." - Michelle Obama
             </p>
           </div>
         </div>
