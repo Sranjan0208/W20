@@ -50,7 +50,7 @@ export default function Home() {
               />
             </div>
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
-              Log in
+              Sign Up
             </button>
             <p className="text-xs text-gray-500 mt-3">
               Literally you probably heard of them jean shorts.
