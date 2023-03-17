@@ -1,6 +1,6 @@
 import Form from "../components/Form";
 
-const MenteeQ = () => {
+const MenterQ = () => {
   return (
     <div>
       <section class="text-gray-600 body-font">
@@ -31,4 +31,4 @@ const MenteeQ = () => {
   );
 };
 
-export default MenteeQ;
+export default MenterQ;
