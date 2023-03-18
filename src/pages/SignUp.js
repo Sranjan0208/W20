@@ -2,12 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-
+import {useSession,signIn, signOut} from 'next-auth/react'
 import Header from "../components/Header";
 
 export default function Home() {
+  const {data: session}=useSession()
   return (
     <>
+    
       <Header />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
@@ -48,6 +50,9 @@ export default function Home() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
+            <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg mb-4" onClick={()=>signIn()}>
+            Sign Up With Google
+            </button>
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
             <Link href="/MenteeQ">SignUp</Link>
             </button>
