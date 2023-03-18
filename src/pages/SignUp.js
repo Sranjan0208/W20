@@ -52,7 +52,7 @@ export default function Home() {
             <Link href="/MenteeQ">SignUp</Link>
             </button>
             <p className="text-xs text-gray-500 mt-3">
-               "There is no limit to what we, as women, can accomplish." - Michelle Obama
+               There is no limit to what we, as women, can accomplish. - Michelle Obama
             </p>
           </div>
         </div>
