@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 import Header from "../components/Header";
 
@@ -48,7 +49,7 @@ export default function Home() {
               />
             </div>
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
-              Sign Up
+            <Link href="/MenteeQ">SignUp</Link>
             </button>
             <p className="text-xs text-gray-500 mt-3">
                "There is no limit to what we, as women, can accomplish." - Michelle Obama
