@@ -13,7 +13,7 @@ const Form = () => {
   };
   const [radioheadValue, setradioheadValue] = useState();
 
-  const handleSubmit = (Enevent) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     i()
       .then(() => {
