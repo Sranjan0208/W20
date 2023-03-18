@@ -51,7 +51,7 @@ export default function Home() {
               Log in
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably heard of them jean shorts.
+            There is no limit to what we, as women, can accomplish. - Michelle Obama
             </p>
           </div>
         </div>

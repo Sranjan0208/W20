@@ -1,5 +1,7 @@
 import Header from "../components/Header";
+import Mentors from "../components/Mentors";
 import Link from "next/link";
+
 
 const Mentee = () => {
   return (
@@ -11,34 +13,16 @@ const Mentee = () => {
       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Instructors</h1>
         <div class="h-1 w-20 bg-pink-500 rounded"></div>
+        <Mentors 
+        i1={"Rekha"}
+        i2={"Ruma"}
+        i3={"Rupa"}
+        i4={"Hema"}
+        />
       </div>
-          </div>
-    <div class="flex flex-wrap m-4">
-      <div class="xl:w-1/4 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/564x/a6/58/32/a65832155622ac173337874f02b218fb.jpg" alt="content"/>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Rekha</h2>
-        </div>
-      </div>
-      <div class="xl:w-1/4 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/564x/a6/58/32/a65832155622ac173337874f02b218fb.jpg" alt="content"/>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Jaya</h2>
-        </div>
-      </div>
-      <div class="xl:w-1/4 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/564x/a6/58/32/a65832155622ac173337874f02b218fb.jpg" alt="content"/>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hema</h2>
-        </div>
-      </div>
-      <div class="xl:w-1/4 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/564x/a6/58/32/a65832155622ac173337874f02b218fb.jpg" alt="content"/>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Pushpa</h2>
-        </div>
-      </div>
+      
     </div>
+    
   </div>
 </section>
 
