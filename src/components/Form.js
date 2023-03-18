@@ -13,7 +13,7 @@ const Form = () => {
   };
   const [radioheadValue, setradioheadValue] = useState();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (Enevent) => {
     event.preventDefault();
     i()
       .then(() => {
@@ -25,7 +25,9 @@ const Form = () => {
   };
   return (
     <>
-      <h3 className="mb-4 font-semibold text-gray-900 ">Identification</h3>
+      <h3 className="mb-4 font-semibold text-gray-900 ">
+        Skills you can teach
+      </h3>
       <form onSubmit={handleSubmit}>
         <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg ">
           <li className="w-full border-b border-gray-200 rounded-t-lg ">
@@ -42,7 +44,7 @@ const Form = () => {
                 htmlFor="list-radio-license"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                Driver License
+                Technical
               </label>
             </div>
           </li>
@@ -60,7 +62,7 @@ const Form = () => {
                 htmlFor="list-radio-id"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                State ID
+                Entrepreneurship
               </label>
             </div>
           </li>
@@ -78,7 +80,7 @@ const Form = () => {
                 htmlFor="list-radio-millitary"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                US Millitary
+                Soft Skills
               </label>
             </div>
           </li>
@@ -96,7 +98,7 @@ const Form = () => {
                 htmlFor="list-radio-passport"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                US Passport
+                Finance
               </label>
             </div>
           </li>
