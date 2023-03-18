@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import { db } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
-const Form = () => {
+const Form = ({ question, o1, o2, o3, o4 }) => {
   const i = async () => {
     const radioheadRef = await addDoc(collection(db, "forms"), {
       value: radioheadValue,
@@ -25,9 +25,7 @@ const Form = () => {
   };
   return (
     <>
-      <h3 className="mb-4 font-semibold text-gray-900 ">
-        Skills you can teach
-      </h3>
+      <h3 className="mb-4 font-semibold text-gray-900 ">{question}</h3>
       <form onSubmit={handleSubmit}>
         <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg ">
           <li className="w-full border-b border-gray-200 rounded-t-lg ">
@@ -44,7 +42,7 @@ const Form = () => {
                 htmlFor="list-radio-license"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                Technical
+                {o1}
               </label>
             </div>
           </li>
@@ -62,7 +60,7 @@ const Form = () => {
                 htmlFor="list-radio-id"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                Entrepreneurship
+                {o2}
               </label>
             </div>
           </li>
@@ -80,7 +78,7 @@ const Form = () => {
                 htmlFor="list-radio-millitary"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                Soft Skills
+                {o3}
               </label>
             </div>
           </li>
@@ -98,7 +96,7 @@ const Form = () => {
                 htmlFor="list-radio-passport"
                 className="w-full py-3 ml-2 text-sm font-medium text-gray-900 "
               >
-                Finance
+                {o4}
               </label>
             </div>
           </li>
