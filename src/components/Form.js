@@ -102,9 +102,10 @@ const Form = ({ question, o1, o2, o3, o4 }) => {
             </div>
           </li>
         </ul>
-        <button class="ml-0 inline-flex text-white bg-pink-500 border-0 py-1 px-6 focus:outline-none hover:bg-pink-300 rounded text-lg" type="submit">Save</button>
         <h1 class="text-white">...</h1>
-        
+        <button class="ml-0 inline-flex text-white bg-pink-500 border-0 py-0.3 px-3 focus:outline-none hover:bg-pink-300 rounded text-lg" type="submit">Save</button>
+        <h1 class="text-white">...</h1>
+        <h1 class="text-white">...</h1>
       </form>
     </>
   );
