@@ -85,8 +85,20 @@ const MentorQ = () => {
                 o3={"Soft Skills"}
                 o4={"Other"}
               />
-              <Form />
-              <Form />
+              <Form 
+              question={"Languages you are comfortable with"}
+                o1={"English"}
+                o2={"Hindi"}
+                o3={"Kannada"}
+                o4={"Tamil"}
+              />
+              <Form 
+              question={"Which part of India do you belong to?"}
+              o1={"North"}
+              o2={"East"}
+              o3={"West"}
+              o4={"South"}
+              />
             </div>
           </div>
         </div>
