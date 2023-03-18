@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font bg-gradient-to-r from-violet-200 to-pink-200">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
@@ -45,6 +45,7 @@ const App = () => {
         agent-id="0348936a-710f-472f-a257-a95a3bcd7d5f"
         language-code="en"
       ></df-messenger>
+      
     </>
   );
 };

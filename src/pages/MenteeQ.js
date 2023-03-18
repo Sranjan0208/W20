@@ -3,6 +3,7 @@ import { useState } from "react";
 import firebase from "firebase/app";
 import { db } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
+import Link from "next/link";
 
 const MenteeQ = () => {
   const i = async () => {
@@ -104,6 +105,9 @@ const MenteeQ = () => {
               o4={"South"}/>
               
             </div>
+            <button type="submit" className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
+            <Link href="/calc">Submit</Link>
+            </button>
           </div>
         </div>
       </section>
