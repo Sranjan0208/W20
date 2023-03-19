@@ -54,7 +54,13 @@ export default function Home() {
             Sign Up With Google
             </button>
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
-            <Link href="/MenteeQ">SignUp</Link>
+            <Link href="/MenteeQ">SignUp as Mentee</Link>
+
+            </button>
+            <h1 class="text-white">...</h1>
+            <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
+          
+            <Link href="/MentorQ">SignUp as Mentor</Link>
             </button>
             <p className="text-xs text-gray-500 mt-3">
                There is no limit to what we, as women, can accomplish. - Michelle Obama
