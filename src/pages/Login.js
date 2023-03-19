@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-
+import Link from "next/link";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -47,8 +47,15 @@ export default function Home() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
+            
             <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
-              Log in
+            <Link href="/Mentee">Login as Mentee</Link>
+
+            </button>
+            <h1 class="text-white">...</h1>
+            <button className="text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">
+          
+            <Link href="/Mentor">Login as Mentor</Link>
             </button>
             <p className="text-xs text-gray-500 mt-3">
             There is no limit to what we, as women, can accomplish. - Michelle Obama
